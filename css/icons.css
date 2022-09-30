@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Archive';
+  src: url("../fonts/Archive-Regular.otf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "untitled-font-19";
+  src:url("../fonts/untitled-font-19.eot");
+  src:url("../fonts/untitled-font-19.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/untitled-font-19.woff") format("woff"),
+  url("../fonts/untitled-font-19.ttf") format("truetype"),
+  url("../fonts/untitled-font-19.svg#untitled-font-19") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "untitled-font-19" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "untitled-font-19" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-vector2:before {
+  content: "\61";
+}
+.icon-vector3:before {
+  content: "\62";
+}
+.icon-vector4:before {
+  content: "\63";
+}
+.icon-vector:before {
+  content: "\64";
+}
+.icon-user-circle:before {
+  content: "\65";
+}
+.icon-group:before {
+  content: "\66";
+}
+.icon-group-2684:before {
+  content: "\67";
+}
+.icon-vector-1:before {
+  content: "\68";
+}
+.icon-vector2-1:before {
+  content: "\69";
+}
+.icon-vector-stroke:before {
+  content: "\6a";
+}
