@@ -2,14 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Title</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.css">
 </head>
 <body>
 <header class="header">
+    <div class="mobile__header">
+        <div id="mobile__header-burger">
+            <span></span>
+        </div>
+        <div class="search--container">
+            <input type="text" class="mobile__header-search" placeholder="Поиск">
+        </div>
+
+    </div>
     <div class="header--wrap">
         <a href="index.html" class="header__logo">
-            <img src="img/logo.svg" alt="" class="header__logo-image">
+            <picture>
+                <source srcset="/img/mobile_logo.svg" media="(max-width: 999px)" />
+                <img src="img/logo.svg" alt="" class="header__logo-image">
+            </picture>
         </a>
         <div class="header__right">
             <div class="header__right-top">
@@ -33,6 +47,85 @@
                         Каталог
                     </button>
                     <input type="text" class="header__search-input" placeholder="Поиск в каталоге">
+                    <div class="hidden__catalog">
+                        <div class="hidden__catalog-field">
+                            <div class="hidden__catalog-item">
+                                <a class="hidden__catalog-item--link">Бакалея</a>
+                                <div class="hidden__under">
+                                    <a href="" class="hidden__under-item">Замороженные блины</a>
+                                    <a href="" class="hidden__under-item">Продукты</a>
+                                    <a href="" class="hidden__under-item">Лёд</a>
+                                    <a href="" class="hidden__under-item">Рыба и морепродукты</a>
+                                </div>
+                            </div>
+                            <div class="hidden__catalog-item">
+                                <a class="hidden__catalog-item--link">Вода, напитки, соки</a>
+                                <div class="hidden__under">
+                                    <a href="" class="hidden__under-item">Замороженные блины</a>
+                                    <a href="" class="hidden__under-item">Продукты</a>
+                                    <a href="" class="hidden__under-item">Лёд</a>
+                                    <a href="" class="hidden__under-item">Рыба и морепродукты</a>
+                                </div>
+                            </div>
+                            <div class="hidden__catalog-item">
+                                <a class="hidden__catalog-item--link">Детское питание</a>
+                                <div class="hidden__under">
+                                    <a href="" class="hidden__under-item">Замороженные блины</a>
+                                    <a href="" class="hidden__under-item">Продукты</a>
+                                    <a href="" class="hidden__under-item">Лёд</a>
+                                    <a href="" class="hidden__under-item">Рыба и морепродукты</a>
+                                </div>
+                            </div>
+                            <div class="hidden__catalog-item">
+                                <a class="hidden__catalog-item--link">Замороженные продукты</a>
+                                <div class="hidden__under">
+                                    <a href="" class="hidden__under-item">Замороженные блины</a>
+                                    <a href="" class="hidden__under-item">Продукты</a>
+                                    <a href="" class="hidden__under-item">Лёд</a>
+                                    <a href="" class="hidden__under-item">Рыба и морепродукты</a>
+                                </div>
+                            </div>
+                            <div class="hidden__catalog-item">
+                                <a class="hidden__catalog-item--link">Кондитерские изделия</a>
+                                <div class="hidden__under">
+                                    <a href="" class="hidden__under-item">Замороженные блины</a>
+                                    <a href="" class="hidden__under-item">Продукты</a>
+                                    <a href="" class="hidden__under-item">Лёд</a>
+                                    <a href="" class="hidden__under-item">Рыба и морепродукты</a>
+                                </div>
+                            </div>
+                            <div class="hidden__catalog-item">
+                                <a class="hidden__catalog-item--link">Молочные продукты</a>
+                                <div class="hidden__under">
+                                    <a href="" class="hidden__under-item">Замороженные блины</a>
+                                    <a href="" class="hidden__under-item">Продукты</a>
+                                    <a href="" class="hidden__under-item">Лёд</a>
+                                    <a href="" class="hidden__under-item">Рыба и морепродукты</a>
+                                </div>
+                            </div>
+                            <div class="hidden__catalog-item">
+                                <a href="index.html" class="hidden__catalog-item--link">Сыры</a>
+                            </div>
+                            <div class="hidden__catalog-item">
+                                <a class="hidden__catalog-item--link">Мясо и птица</a>
+                                <div class="hidden__under">
+                                    <a href="" class="hidden__under-item">Замороженные блины</a>
+                                    <a href="" class="hidden__under-item">Продукты</a>
+                                    <a href="" class="hidden__under-item">Лёд</a>
+                                    <a href="" class="hidden__under-item">Рыба и морепродукты</a>
+                                </div>
+                            </div>
+                            <div class="hidden__catalog-item">
+                                <a class="hidden__catalog-item--link">Рыба</a>
+                                <div class="hidden__under">
+                                    <a href="" class="hidden__under-item">Замороженные блины</a>
+                                    <a href="" class="hidden__under-item">Продукты</a>
+                                    <a href="" class="hidden__under-item">Лёд</a>
+                                    <a href="" class="hidden__under-item">Рыба и морепродукты</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <a href="tel: +7 999 222 23 23" class="header__tel">+7 999 222 23 23</a>
                 <div class="header__ref">
@@ -41,6 +134,7 @@
                     </a>
                     <a href="" class="header__ref-cart">
                         <i class="header__ref-cart--icon icon-group"></i>
+                        <p class="header__ref-cart--value">12</p>
                     </a>
                 </div>
             </div>
@@ -49,8 +143,13 @@
 </header>
 <main class="wrapper">
     <section class="main">
-        <div class="main__slider">
-            <img src="img/slider_item.png" alt="" class="main__slider-item">
+        <div class="main__slider swiper">
+            <div class="swiper-wrapper">
+                <img src="img/slider_item.png" alt="" class="main__slider-item swiper-slide">
+                <img src="img/slider_item.png" alt="" class="main__slider-item swiper-slide">
+                <img src="img/slider_item.png" alt="" class="main__slider-item swiper-slide">
+            </div>
+
         </div>
     </section>
     <section class="products">
@@ -658,8 +757,117 @@
             </div>
         </div>
     </section>
+    <section class="about">
+        <div class="about__text">
+            <h1 class="about__text-title">О КОмпании</h1>
+            <p class="about__text-desc">Мы — крупнейшая дистрибьюторско-логистическая организация Тамбовской области!</p>
+            <p class="about__text-desc">Мы имеем множество налаженных успешных взаимоотношений с клиентами, эффективный опыт в продажах, и мы точно знаем, как применить его в своей работе!       </p>
+        </div>
+        <img src="img/about.png" alt="" class="about__image">
+    </section>
+    <section class="pluses">
+        <h1 class="pluses__title">Наши преимущества</h1>
+        <div class="pluses__grid">
+            <div class="pluses__grid-item">
+                <img src="img/first_plus.png" alt="" class="pluses__grid-item--image">
+                <p class="pluses__grid-item--text">Мы — крупная и стабильная компания. Нас больше 300</p>
+            </div>
+            <div class="pluses__grid-item">
+                <img src="img/second_plus.png" alt="" class="pluses__grid-item--image">
+                <p class="pluses__grid-item--text">Работаем с 2 600 торговыми организациями Тамбова и Тамбовской области</p>
+            </div>
+            <div class="pluses__grid-item">
+                <img src="img/third_plus.png" alt="" class="pluses__grid-item--image">
+                <p class="pluses__grid-item--text">У нас крупные и известные партнеры
+                </p>
+            </div>
+            <div class="pluses__grid-item">
+                <img src="img/fourth_plus.png" alt="" class="pluses__grid-item--image">
+                <p class="pluses__grid-item--text">Бесплатная оперативная доставка в течении 36ч</p>
+            </div>
+            <div class="pluses__grid-item">
+                <img src="img/fifth_plus.png" alt="" class="pluses__grid-item--image">
+                <p class="pluses__grid-item--text">Ежедневно мы доставляем<br> более 1000 заказов</p>
+            </div>
+            <div class="pluses__grid-item">
+                <img src="img/sixth_plus.png" alt="" class="pluses__grid-item--image">
+                <p class="pluses__grid-item--text">Профессиональная команда менеджеров по продажам</p>
+            </div>
+        </div>
+    </section>
+    <section class="get">
+        <h1 class="get__title">2 варианта получения заказа</h1>
+        <div class="get__choose">
+            <div class="get__choose-item">
+                <img src="img/first_get.png" alt="" class="get__choose-item--image">
+                <div class="get__choose-item--text">
+                    <p class="choose__title">Самовывоз</p>
+                    <div class="choose__list">
+                        <p class="choose__list-item">+ Минимальный объем заказа — 3000р</p>
+                        <p class="choose__list-item">+ Адрес самовывоза: <span class="choose__list-orange">Тамбов, Киквидзе, 85Б</span></p>
+                        <p class="choose__list-item">+ Стоимость самовывоза — <span class="choose__list-green">бесплатно</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="get__choose-item">
+                <img src="img/second_get.png" alt="" class="get__choose-item--image">
+                <div class="get__choose-item--text">
+                    <p class="choose__title">Доставка</p>
+                    <p class="choose__desc">Осуществляется еженедельно в согласованный с клиентом день</p>
+                    <div class="choose__list">
+                        <p class="choose__list-item">+ Минимальный объем заказа — 500р</p>
+                        <p class="choose__list-item">+ Срок доставки до 2 рабочих дней</p>
+                        <p class="choose__list-item">+ Стоимость самовывоза — <span class="choose__list-green">бесплатно</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
+<footer class="footer">
+    <div class="footer__wrap">
+        <div class="footer__wrap-top">
+            <nav class="footer__nav">
+                <a class="footer__nav-item">Акции</a>
+                <a class="footer__nav-item">Как заказать</a>
+                <a class="footer__nav-item">Оплата</a>
+                <a class="footer__nav-item">Доставка</a>
+                <a class="footer__nav-item">Гарантии</a>
+                <a class="footer__nav-item">О компании</a>
+                <a class="footer__nav-item">Новости</a>
+            </nav>
+            <div class="footer__contacts">
+                <a href="tel: +7 999 222 23 23" class="footer__contacts-item">
+                    <img src="img/phone.svg" class="footer__contacts-item--icon">
+                    +7 999 222 23 23
+                </a>
+                <a href="mailto: info@pro-dvizhenie.ru" class="footer__contacts-item">
+                    <i class="footer__contacts-item--icon icon-vector"></i>
+                    info@pro-dvizhenie.ru
+                </a>
+            </div>
+            <div class="footer__socials">
+                <a href="" target="_blank" class="footer__socials-item">
+                    <i class="footer__socails-item--icon icon-vector2"></i>
+                </a>
+                <a href="" target="_blank" class="footer__socials-item">
+                    <i class="footer__socails-item--icon icon-vector3"></i>
+                </a>
+                <a href="" target="_blank" class="footer__socials-item">
+                    <i class="footer__socails-item--icon icon-vector4"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer__wrap-bottom">
+            <p class="footer__policy">2004-2022 © Продвижение. Все права защищены</p>
+            <a href="" class="footer__intrid">Made by INTRID</a>
+        </div>
+    </div>
+</footer>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="js/cartButtonsListeners.js"></script>
+<script src="js/catalogListeners.js"></script>
+<script src="js/burgerListeners.js"></script>
 </body>
 </html>

@@ -19,7 +19,7 @@ $('.products__buy').click(function () {
 $('.products__col-minus').click(function () {
     let counter = parseInt($(this).next().val())
 
-    if (counter === 1) {
+    if (counter <= 1) {
         $(this).next().val(1)
     }
     else {
@@ -30,7 +30,7 @@ $('.products__col-minus').click(function () {
 $('.products__col-plus').click(function () {
     let counter = parseInt($(this).prev().val())
 
-    if (counter === 999) {
+    if (counter >= 999) {
         $(this).prev().val(999)
     }
     else {
@@ -40,7 +40,7 @@ $('.products__col-plus').click(function () {
 
 $(document).ready(function() {
     $(".products__col-input").on('blur', function () {
-        if ($(this).val() === ''){
+        if ($(this).val() === '' || $(this).val() == 0){
             $(this).val(1)
         }
     })
@@ -63,3 +63,7 @@ $(document).ready(function() {
         }
     });
 });
+
+const swiper = new Swiper('.main__slider', {
+
+})

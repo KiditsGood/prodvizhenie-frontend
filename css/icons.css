@@ -63,9 +63,6 @@
 .icon-group:before {
   content: "\66";
 }
-.icon-group-2684:before {
-  content: "\67";
-}
 .icon-vector-1:before {
   content: "\68";
 }
@@ -74,4 +71,16 @@
 }
 .icon-vector-stroke:before {
   content: "\6a";
+}
+.icon-search-svgrepo-com:before {
+  content: "\6b";
+}
+.icon-phone:before {
+  content: "\6c";
+}
+.icon-frame-3295:before {
+  content: "\6d";
+}
+.icon-frame-3295-1:before {
+  content: "\6e";
 }
