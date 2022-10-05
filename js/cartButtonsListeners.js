@@ -63,7 +63,3 @@ $(document).ready(function() {
         }
     });
 });
-
-const swiper = new Swiper('.main__slider', {
-
-})
