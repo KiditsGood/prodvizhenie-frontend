@@ -3,11 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Title</title>
+    <title>Продвижение. Доставка продуктов оптом</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/jquery-modal.css">
+    <link rel="icon" href="img/favicon.svg" type="image/x-icon" />
 </head>
 <body>
+<div class="modals">
+    <div id="login" class="default">
+        <form action="" class="login__form">
+            <h1 class="login__form-title">Войти</h1>
+            <div class="login__form-item">
+                <p class="login__form-name">Email</p>
+                <input type="email" class="login__form-input" required>
+            </div>
+            <div class="login__form-item">
+                <p class="login__form-name">Пароль</p>
+                <input type="password" class="login__form-input" required>
+            </div>
+            <button type="button" class="login__form-forgot">Забыли пароль?</button>
+            <button type="submit" class="login__form-submit">Войти</button>
+            <p class="login__form-reg">Нет аккаунта? <span class="login__form-reg--go">Зарегистрироваться</span></p>
+            <a href="" rel="modal:close" class="login__form-close">
+                <span></span>
+                <span></span>
+            </a>
+        </form>
+    </div>
+    <div id="reset" class="default">
+        <form action="" class="login__form reset__form">
+            <h1 class="login__form-title">Восстановить пароль</h1>
+            <div class="login__form-item">
+                <p class="login__form-name">Email</p>
+                <input type="email" class="login__form-input" required>
+            </div>
+            <div class="login__form-buttons">
+                <button type="button" class="login__form-cancel">Отмена</button>
+                <button type="submit" class="login__form-link">Отправить ссылку</button>
+            </div>
+
+            <a href="" rel="modal:close" class="login__form-close">
+                <span></span>
+                <span></span>
+            </a>
+        </form>
+    </div>
+    <div id="success" class="default">
+        <form action="" class="login__form reset__form">
+            <img src="img/success_check.svg" alt="" class="login__form-success">
+            <div class="login__form-text">
+                <p class="login__form-text--title">Код отправлен</p>
+                <p class="login__form-text--desc">Мы отправили код на вашу почту. Елси не нашли сообщение, проверьте папку спам.</p>
+                <p class="login__form-text--desc">Не пришло письмо? <span class="login__form-text--again">Отправить еще раз</span></p>
+            </div>
+
+            <a href="" rel="modal:close" class="login__form-close">
+                <span></span>
+                <span></span>
+            </a>
+        </form>
+    </div>
+</div>
 <header class="header">
     <div class="mobile__header">
         <div id="mobile__header-burger">
@@ -22,10 +79,11 @@
     </div>
     <div class="header--wrap">
         <a href="index.html" class="header__logo">
-            <picture>
-                <source srcset="/img/mobile_logo.svg" media="(max-width: 999px)" />
-                <img src="img/logo.svg" alt="" class="header__logo-image">
-            </picture>
+            <img src="img/logo.svg" alt="" class="header__logo-image">
+            <div class="header__logo-text">
+                <p class="header__logo-text--name">Продвижение</p>
+                <p class="header__logo-text--value">Доставка продуктов оптом</p>
+            </div>
         </a>
         <div class="header__right">
             <div class="header__right-top">
@@ -41,6 +99,29 @@
                     <i class="header__mail-icon icon-vector"></i>
                     info@pro-dvizhenie.ru
                 </a>
+                <div class="mobile__contacts">
+                    <div class="footer__contacts">
+                        <a href="tel: +7 999 222 23 23" class="footer__contacts-item">
+                            <i class="icon-phone"></i>
+                            +7 999 222 23 23
+                        </a>
+                        <a href="mailto: info@pro-dvizhenie.ru" class="footer__contacts-item">
+                            <i class="footer__contacts-item--icon icon-vector"></i>
+                            info@pro-dvizhenie.ru
+                        </a>
+                    </div>
+                    <div class="footer__socials">
+                        <a href="" target="_blank" class="footer__socials-item">
+                            <i class="footer__socails-item--icon icon-vector2"></i>
+                        </a>
+                        <a href="" target="_blank" class="footer__socials-item">
+                            <i class="footer__socails-item--icon icon-vector3"></i>
+                        </a>
+                        <a href="" target="_blank" class="footer__socials-item">
+                            <i class="footer__socails-item--icon icon-vector4"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div class="header__right-bottom">
                 <div class="header__search">
@@ -54,6 +135,7 @@
                             <div class="hidden__catalog-item">
                                 <a class="hidden__catalog-item--link">Бакалея</a>
                                 <div class="hidden__under">
+                                    <button class="hidden__under-button"><i class="hidden__under-icon icon-right"></i>Каталог</button>
                                     <a href="" class="hidden__under-item">Замороженные блины</a>
                                     <a href="" class="hidden__under-item">Продукты</a>
                                     <a href="" class="hidden__under-item">Лёд</a>
@@ -63,6 +145,7 @@
                             <div class="hidden__catalog-item">
                                 <a class="hidden__catalog-item--link">Вода, напитки, соки</a>
                                 <div class="hidden__under">
+                                    <button class="hidden__under-button"><i class="hidden__under-icon icon-right"></i>Каталог</button>
                                     <a href="" class="hidden__under-item">Замороженные блины</a>
                                     <a href="" class="hidden__under-item">Продукты</a>
                                     <a href="" class="hidden__under-item">Лёд</a>
@@ -72,6 +155,7 @@
                             <div class="hidden__catalog-item">
                                 <a class="hidden__catalog-item--link">Детское питание</a>
                                 <div class="hidden__under">
+                                    <button class="hidden__under-button"><i class="hidden__under-icon icon-right"></i>Каталог</button>
                                     <a href="" class="hidden__under-item">Замороженные блины</a>
                                     <a href="" class="hidden__under-item">Продукты</a>
                                     <a href="" class="hidden__under-item">Лёд</a>
@@ -81,6 +165,7 @@
                             <div class="hidden__catalog-item">
                                 <a class="hidden__catalog-item--link">Замороженные продукты</a>
                                 <div class="hidden__under">
+                                    <button class="hidden__under-button"><i class="hidden__under-icon icon-right"></i>Каталог</button>
                                     <a href="" class="hidden__under-item">Замороженные блины</a>
                                     <a href="" class="hidden__under-item">Продукты</a>
                                     <a href="" class="hidden__under-item">Лёд</a>
@@ -90,6 +175,7 @@
                             <div class="hidden__catalog-item">
                                 <a class="hidden__catalog-item--link">Кондитерские изделия</a>
                                 <div class="hidden__under">
+                                    <button class="hidden__under-button"><i class="hidden__under-icon icon-right"></i>Каталог</button>
                                     <a href="" class="hidden__under-item">Замороженные блины</a>
                                     <a href="" class="hidden__under-item">Продукты</a>
                                     <a href="" class="hidden__under-item">Лёд</a>
@@ -99,6 +185,7 @@
                             <div class="hidden__catalog-item">
                                 <a class="hidden__catalog-item--link">Молочные продукты</a>
                                 <div class="hidden__under">
+                                    <button class="hidden__under-button"><i class="hidden__under-icon icon-right"></i>Каталог</button>
                                     <a href="" class="hidden__under-item">Замороженные блины</a>
                                     <a href="" class="hidden__under-item">Продукты</a>
                                     <a href="" class="hidden__under-item">Лёд</a>
@@ -111,6 +198,7 @@
                             <div class="hidden__catalog-item">
                                 <a class="hidden__catalog-item--link">Мясо и птица</a>
                                 <div class="hidden__under">
+                                    <button class="hidden__under-button"><i class="hidden__under-icon icon-right"></i>Каталог</button>
                                     <a href="" class="hidden__under-item">Замороженные блины</a>
                                     <a href="" class="hidden__under-item">Продукты</a>
                                     <a href="" class="hidden__under-item">Лёд</a>
@@ -120,6 +208,7 @@
                             <div class="hidden__catalog-item">
                                 <a class="hidden__catalog-item--link">Рыба</a>
                                 <div class="hidden__under">
+                                    <button class="hidden__under-button"><i class="hidden__under-icon icon-right"></i>Каталог</button>
                                     <a href="" class="hidden__under-item">Замороженные блины</a>
                                     <a href="" class="hidden__under-item">Продукты</a>
                                     <a href="" class="hidden__under-item">Лёд</a>
@@ -131,10 +220,10 @@
                 </div>
                 <a href="tel: +7 999 222 23 23" class="header__tel">+7 999 222 23 23</a>
                 <div class="header__ref">
-                    <a href="" class="header__ref-user">
+                    <a class="header__ref-user unregistered--user">
                         <i class="header__ref-user--icon icon-user-circle"></i>
                     </a>
-                    <a href="" class="header__ref-cart">
+                    <a class="header__ref-cart">
                         <i class="header__ref-cart--icon icon-group"></i>
                         <p class="header__ref-cart--value">12</p>
                     </a>
@@ -147,15 +236,30 @@
     <section class="main">
         <div class="main__slider swiper">
             <div class="swiper-wrapper">
-                <img src="img/slider_item.png" alt="" class="main__slider-item swiper-slide">
-                <img src="img/slider_item.png" alt="" class="main__slider-item swiper-slide">
-                <img src="img/slider_item.png" alt="" class="main__slider-item swiper-slide">
+                <div class="swiper-slide picture--wrapper">
+                    <picture>
+                        <source srcset="img/slider_mobile.png" media="(max-width: 999px)">
+                        <img src="img/slider_item.png" alt="" class="main__slider-item">
+                    </picture>
+                </div>
+                <div class="swiper-slide picture--wrapper">
+                    <picture>
+                        <source srcset="img/slider_mobile.png" media="(max-width: 999px)">
+                        <img src="img/slider_item.png" alt="" class="main__slider-item">
+                    </picture>
+                </div>
+                <div class="swiper-slide picture--wrapper">
+                    <picture>
+                        <source srcset="img/slider_mobile.png" media="(max-width: 999px)">
+                        <img src="img/slider_item.png" alt="" class="main__slider-item">
+                    </picture>
+                </div>
             </div>
             <div class="main__slider-dots"></div>
         </div>
     </section>
     <section class="products">
-        <h1 class="products__title">с доставкой по тамбову</h1>
+        <h1 class="products__title">Продукты оптом с доставкой по Тамбову</h1>
         <div class="products__field">
             <div class="products__item">
                 <a href="" class="products--link" title="Подробнее о *Название товара*">
@@ -880,16 +984,25 @@
         </div>
         <div class="footer__wrap-bottom">
             <p class="footer__policy">2004-2022 © Продвижение. Все права защищены</p>
-            <a href="" class="footer__intrid">Made by INTRID</a>
+            <a target="_blank" href="https://intrid.ru/" class="footer__intrid">
+                <div class="footer__intrid-circle">
+                    <span class="footer__intrid-circle--in"></span>
+                </div>
+                made in <span class="footer__intrid-fat">INTRID</span>
+            </a>
         </div>
     </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/jquery-modal.js"></script>
 <script src="js/cartButtonsListeners.js"></script>
 <script src="js/catalogListeners.js"></script>
 <script src="js/burgerListeners.js"></script>
 <script src="js/botMenu.js"></script>
 <script src="js/sliders.js"></script>
+<script src="js/search.js"></script>
+<script src="js/headerScroll.js"></script>
+<script src="js/modals.js"></script>
 </body>
 </html>

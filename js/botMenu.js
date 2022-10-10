@@ -20,6 +20,9 @@ $('.menu__item:first-child').click(function () {
         $('body').css({
             overflow: 'hidden'
         })
+        $('#mobile__header-burger').removeClass('open')
+        $('.header__right-top').slideUp(200)
+        $('.mobile__header').removeClass('hidden')
     }
     else {
         $('body').css({
