@@ -122,7 +122,6 @@ $(document).click(function (e) {
             $('.icon-frame-3295').removeClass('icon-frame-3295').addClass('icon-frame-3295-1')
         }
     }
-
 })
 
 $('.hidden__catalog-item').click(function () {

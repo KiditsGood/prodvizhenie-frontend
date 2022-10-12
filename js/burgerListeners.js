@@ -1,4 +1,6 @@
 $('#mobile__header-burger').click(function () {
+    $('#login, #success, #reg, #reset').removeClass('active')
+
     let openBurger = $('.header__right-top')
 
     $(this).toggleClass('open')

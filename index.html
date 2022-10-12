@@ -24,7 +24,7 @@
             </div>
             <button type="button" class="login__form-forgot">Забыли пароль?</button>
             <button type="submit" class="login__form-submit">Войти</button>
-            <p class="login__form-reg">Нет аккаунта? <span class="login__form-reg--go">Зарегистрироваться</span></p>
+            <p class="login__form-reg">Нет аккаунта? <span class="login__form-reg--go reg">Зарегистрироваться</span></p>
             <a href="" rel="modal:close" class="login__form-close">
                 <span></span>
                 <span></span>
@@ -58,6 +58,53 @@
                 <p class="login__form-text--desc">Не пришло письмо? <span class="login__form-text--again">Отправить еще раз</span></p>
             </div>
 
+            <a href="" rel="modal:close" class="login__form-close">
+                <span></span>
+                <span></span>
+            </a>
+        </form>
+    </div>
+    <div id="reg" class="default">
+        <form action="" class="login__form">
+            <h1 class="login__form-title">Регистрация</h1>
+            <div class="login__flex">
+                <div class="login__form-item">
+                    <p class="login__form-name">Имя</p>
+                    <input type="text" class="login__form-input" required>
+                </div>
+                <div class="login--flex">
+                    <div class="login__form-item">
+                        <p class="login__form-name">Телефон</p>
+                        <input type="tel" class="login__form-input" required>
+                    </div>
+                    <div class="login__form-item">
+                        <p class="login__form-name">Email</p>
+                        <input type="email" class="login__form-input" required>
+                    </div>
+                </div>
+            </div>
+            <div class="login__switch">
+                <button type="button" class="login__switch-button active">Физическое лицо</button>
+                <button type="button" class="login__switch-button">Юридическое лицо</button>
+            </div>
+            <div class="login__hidden">
+                <div class="login__form-item">
+                    <p class="login__form-name">Наименование</p>
+                    <input type="text" class="login__form-input yur" required readonly>
+                </div>
+                <div class="login--flex">
+                    <div class="login__form-item">
+                        <p class="login__form-name">ИНН</p>
+                        <input type="text" class="login__form-input yur" required readonly>
+                    </div>
+                    <div class="login__form-item">
+                        <p class="login__form-name">КПП</p>
+                        <input type="text" class="login__form-input yur" required readonly>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="login__form-submit">Зарегистрироваться</button>
+            <p class="login__form-reg">Уже есть аккаунт? <span class="login__form-reg--go entry">Вход</span></p>
             <a href="" rel="modal:close" class="login__form-close">
                 <span></span>
                 <span></span>
