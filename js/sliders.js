@@ -11,7 +11,27 @@ const prev = new Swiper('.previous', {
         prevEl: '.previous--prev'
     },
     spaceBetween: 20,
-    slidesPerView: 4
+    slidesPerView: 4,
+    breakpoints:{
+        1000: {
+            slidesPerView: 3
+        },
+        1340: {
+            slidesPerView: 4
+        },
+        0: {
+            slidesPerView: 2
+        },
+        540: {
+            slidesPerView: 3
+        },
+        710: {
+            slidesPerView: 4
+        },
+        882: {
+            slidesPerView: 5
+        }
+    }
 })
 
 const withSect = new Swiper('.with', {
@@ -20,7 +40,27 @@ const withSect = new Swiper('.with', {
         prevEl: '.with--prev'
     },
     spaceBetween: 20,
-    slidesPerView: 4
+    slidesPerView: 4,
+    breakpoints:{
+        1000: {
+            slidesPerView: 3
+        },
+        1340: {
+            slidesPerView: 4
+        },
+        0: {
+            slidesPerView: 2
+        },
+        540: {
+            slidesPerView: 3
+        },
+        710: {
+            slidesPerView: 4
+        },
+        882: {
+            slidesPerView: 5
+        }
+    }
 })
 
 const same = new Swiper('.same', {
@@ -29,7 +69,27 @@ const same = new Swiper('.same', {
         prevEl: '.same--prev'
     },
     spaceBetween: 20,
-    slidesPerView: 4
+    slidesPerView: 4,
+    breakpoints:{
+        1000: {
+            slidesPerView: 3
+        },
+        1340: {
+            slidesPerView: 4
+        },
+        0: {
+            slidesPerView: 2
+        },
+        540: {
+            slidesPerView: 3
+        },
+        710: {
+            slidesPerView: 4
+        },
+        882: {
+            slidesPerView: 5
+        }
+    }
 })
 
 const popular = new Swiper('.popular', {
@@ -38,5 +98,25 @@ const popular = new Swiper('.popular', {
         prevEl: '.popular--prev'
     },
     spaceBetween: 20,
-    slidesPerView: 4
+    slidesPerView: 4,
+    breakpoints:{
+        1000: {
+            slidesPerView: 3
+        },
+        1340: {
+            slidesPerView: 4
+        },
+        0: {
+            slidesPerView: 2
+        },
+        540: {
+            slidesPerView: 3
+        },
+        710: {
+            slidesPerView: 4
+        },
+        882: {
+            slidesPerView: 5
+        }
+    }
 })

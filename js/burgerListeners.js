@@ -21,3 +21,7 @@ $('#mobile__header-burger').click(function () {
 
     openBurger.slideToggle(200)
 })
+
+$('.menu__item:nth-child(3)').click(() => {
+    $('.mobile__header').removeClass('hidden')
+})

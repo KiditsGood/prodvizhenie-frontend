@@ -62,6 +62,9 @@ if ($(window).width() > 999) {
 else {
     $('.menu__item:nth-child(3)').click(() => {
         let loginModal = $('#login')
+        let successModal = $('#success')
+        let regModal = $('#reg')
+        let resetModal = $('#reset')
 
         if (loginModal.hasClass('active')) {
             loginModal.removeClass('active')
@@ -73,6 +76,30 @@ else {
             loginModal.addClass('active')
             $('body').css({
                 overflow: 'hidden'
+            })
+        }
+
+        if (successModal.hasClass('active')) {
+            successModal.removeClass('active')
+            loginModal.removeClass('active')
+            $('body').css({
+                overflow: 'visible'
+            })
+        }
+
+        if (regModal.hasClass('active')) {
+            regModal.removeClass('active')
+            loginModal.removeClass('active')
+            $('body').css({
+                overflow: 'visible'
+            })
+        }
+
+        if (resetModal.hasClass('active')) {
+            resetModal.removeClass('active')
+            loginModal.removeClass('active')
+            $('body').css({
+                overflow: 'visible'
             })
         }
     })
