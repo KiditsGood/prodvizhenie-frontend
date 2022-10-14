@@ -57,9 +57,22 @@ if ($(window).width() > 999) {
             overflow: 'visible'
         })
     })
+    $('.order__item-title--exist').click(() => {
+        $('#login').modal({
+            fadeDuration: 200
+        })
+    })
 }
 
 else {
+    $('.order__item-title--exist').click(() => {
+        $('#login').addClass('active')
+        $('body').css({
+            overflow: 'hidden'
+        })
+        $('.menu__item:nth-child(3)').addClass('active')
+    })
+
     $('.menu__item:nth-child(3)').click(() => {
         let loginModal = $('#login')
         let successModal = $('#success')
@@ -145,12 +158,12 @@ $('.login__switch-button').click(function () {
             display: 'none'
         })
 
-        hiddenInput.attr('readonly', '')
+        hiddenInput.attr('disabled', '')
     }
     else {
         $('.login__hidden').css({
             display: 'flex'
         })
-        hiddenInput.removeAttr('readonly')
+        hiddenInput.removeAttr('disabled')
     }
 })
