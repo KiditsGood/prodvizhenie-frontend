@@ -6,7 +6,7 @@ $('#mobile__header-burger').click(function () {
     $(this).toggleClass('open')
 
     if (openBurger.css('display') === 'none') {
-        $('body').css({
+        $('html').css({
             overflow: 'hidden'
         })
 
@@ -14,7 +14,7 @@ $('#mobile__header-burger').click(function () {
         $('.menu__item.active').removeClass('active')
     }
     else {
-        $('body').css({
+        $('html').css({
             overflow: 'visible'
         })
     }

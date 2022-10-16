@@ -17,7 +17,7 @@ $('.menu__item:first-child').click(function () {
 
 
     if (catMobile.css('display') === 'none'){
-        $('body').css({
+        $('html').css({
             overflow: 'hidden'
         })
         $('#mobile__header-burger').removeClass('open')
@@ -25,7 +25,7 @@ $('.menu__item:first-child').click(function () {
         $('.mobile__header').removeClass('hidden')
     }
     else {
-        $('body').css({
+        $('html').css({
             overflow: 'visible'
         })
     }

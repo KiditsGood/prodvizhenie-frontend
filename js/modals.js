@@ -67,7 +67,7 @@ if ($(window).width() > 999) {
 else {
     $('.order__item-title--exist').click(() => {
         $('#login').addClass('active')
-        $('body').css({
+        $('html').css({
             overflow: 'hidden'
         })
         $('.menu__item:nth-child(3)').addClass('active')
@@ -81,13 +81,13 @@ else {
 
         if (loginModal.hasClass('active')) {
             loginModal.removeClass('active')
-            $('body').css({
+            $('html').css({
                 overflow: 'visible'
             })
         }
         else {
             loginModal.addClass('active')
-            $('body').css({
+            $('html').css({
                 overflow: 'hidden'
             })
         }
@@ -95,7 +95,7 @@ else {
         if (successModal.hasClass('active')) {
             successModal.removeClass('active')
             loginModal.removeClass('active')
-            $('body').css({
+            $('html').css({
                 overflow: 'visible'
             })
         }
@@ -103,7 +103,7 @@ else {
         if (regModal.hasClass('active')) {
             regModal.removeClass('active')
             loginModal.removeClass('active')
-            $('body').css({
+            $('html').css({
                 overflow: 'visible'
             })
         }
@@ -111,7 +111,7 @@ else {
         if (resetModal.hasClass('active')) {
             resetModal.removeClass('active')
             loginModal.removeClass('active')
-            $('body').css({
+            $('html').css({
                 overflow: 'visible'
             })
         }
@@ -166,4 +166,10 @@ $('.login__switch-button').click(function () {
         })
         hiddenInput.removeAttr('disabled')
     }
+})
+
+$('.products__click').click(() => {
+    $('#click').modal({
+        fadeDuration: 200
+    })
 })
