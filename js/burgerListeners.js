@@ -24,4 +24,6 @@ $('#mobile__header-burger').click(function () {
 
 $('.menu__item:nth-child(3)').click(() => {
     $('.mobile__header').removeClass('hidden')
+    $('.header__right-top').slideUp(200)
+    $('#mobile__header-burger').removeClass('open')
 })

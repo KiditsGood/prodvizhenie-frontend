@@ -54,7 +54,7 @@
             <img src="img/success_check.svg" alt="" class="login__form-success">
             <div class="login__form-text">
                 <p class="login__form-text--title">Код отправлен</p>
-                <p class="login__form-text--desc">Мы отправили код на вашу почту. Елси не нашли сообщение, проверьте папку спам.</p>
+                <p class="login__form-text--desc">Мы отправили код на вашу почту. Если не нашли сообщение, проверьте папку спам.</p>
                 <p class="login__form-text--desc">Не пришло письмо? <span class="login__form-text--again">Отправить еще раз</span></p>
             </div>
 
@@ -112,7 +112,7 @@
         </form>
     </div>
     <div id="click" class="default">
-        <div class="click--wrapper">
+        <form class="click--wrapper">
             <h2 class="click__title">Оформить быстрый заказ</h2>
             <div class="click__field">
                 <img src="img/vasilki.png" alt="" class="products__item-image">
@@ -162,9 +162,9 @@
                     <textarea name="" id="" class="order__comment-field" placeholder="Комментарий к заказу"></textarea>
                 </div>
                 <p class="cart__policy">Продолжая, вы соглашаетесь с <a href="" class="cart__policy-link">обработкой данных</a></p>
-                <button class="click__button">Купить</button>
+                <button type="submit" class="click__button">Купить</button>
             </div>
-        </div>
+        </form>
 
         <a href="" rel="modal:close" class="login__form-close">
             <span></span>
@@ -327,10 +327,10 @@
                 </div>
                 <a href="tel: +7 999 222 23 23" class="header__tel">+7 999 222 23 23</a>
                 <div class="header__ref">
-                    <a class="header__ref-user unregistered--user">
+                    <a class="header__ref-user unregistered--user" title="Личный кабинет">
                         <i class="header__ref-user--icon icon-user-circle"></i>
                     </a>
-                    <a class="header__ref-cart">
+                    <a class="header__ref-cart" title="Корзина">
                         <i class="header__ref-cart--icon icon-group"></i>
                         <p class="header__ref-cart--value">12</p>
                     </a>
@@ -388,6 +388,7 @@
                             </div>
                         </div>
                     </div>
+                    <p class="cart__status">В корзине</p>
                 </a>
                 <div class="products__item-price">
                     <p class="products__item-price--current">17 423,43 р</p>
