@@ -168,7 +168,7 @@ $('.login__switch-button').click(function () {
     }
 })
 
-$('.products__click').click(() => {
+$('.products__click, .mobile__click').click(() => {
     $('#click').modal({
         fadeDuration: 200
     })

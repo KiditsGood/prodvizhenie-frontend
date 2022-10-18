@@ -2065,6 +2065,7 @@ input[type = radio]{
 }
 .create__org > .order__item-inputs--item{
     width: unset;
+    position: relative;
 }
 .small{
     width: 129px;
@@ -2612,6 +2613,65 @@ li.disabled *{
     font-size: 18px;
     line-height: 23px;
     color: rgba(96, 125, 139, 1);
+}
+.mobile__click{
+    display: none;
+}
+.new__select{
+    background: #FFFFFF;
+    border: 2px solid #ECEFF1;
+    border-radius: 12px;
+    padding: 21px 16px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.2s;
+}
+.new__select.active{
+    border-color: #FB8C00;
+}
+.new__select.active .icon-right{
+    transform: rotate(270deg);
+}
+.new__select:hover{
+    cursor: pointer;
+    border-color: #FB8C00;
+}
+.new__select-item{
+    font-size: 16px;
+    line-height: 21px;
+}
+.new__select-hidden{
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    background: #FFFFFF;
+    border: 2px solid #FB8C00;
+    border-radius: 12px;
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    padding: 8px;
+    z-index: 2;
+}
+.new__select-hidden--item{
+    box-sizing: border-box;
+    padding: 12px 8px;
+    transition: 0.2s;
+    border-radius: 8px;
+}
+.new__select-hidden--item:hover{
+    background: rgba(241, 248, 233, 1);
+    cursor: pointer;
+}
+.new__org .filter__check-box--check{
+    position: unset;
+    margin-left: -30px;
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1480px) {
@@ -3681,5 +3741,48 @@ li.disabled *{
     }
     .error__text{
         text-align: center;
+    }
+    .mobile__click{
+        display: block;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 18px;
+        color: #FB8C00;
+        background: #FFF3E0;
+        border-radius: 8px;
+        padding: 14px 16px;
+    }
+    .mobile__card{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 11px;
+        margin-top: 22px;
+    }
+    .product__big-info--share{
+        margin-top: 0;
+        background: white;
+        border: 1px solid #FB8C00;
+        padding: 0 16px;
+        height: 46px;
+        border-radius: 8px;
+    }
+    .click__field{
+        flex-direction: column;
+    }
+    #click .products__item-image{
+        display: none;
+    }
+    #click .products__item-name{
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    #click{
+        padding: 20px;
+    }
+    #click .login__form-close{
+        display: block;
+        right: 5px;
     }
 }

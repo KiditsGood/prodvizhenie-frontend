@@ -40,3 +40,17 @@ $('.save').click(() => {
     $('.create__org').css('display', 'block')
     $('.new__org').css('display', 'none')
 })
+
+$('.new__select').click(function() {
+    $('.new__select-hidden').slideUp(200)
+    $('.new__select').removeClass('active')
+
+    $(this).next().slideToggle(200)
+    $(this).toggleClass('active')
+})
+
+$('.new__select-hidden--item').click(function () {
+    $(this).parent().slideUp(200)
+    $(this).parent().prev().removeClass('active')
+    $(this).parent().prev().find('p').text($(this).text())
+})
