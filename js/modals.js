@@ -173,3 +173,9 @@ $('.products__click, .mobile__click').click(() => {
         fadeDuration: 200
     })
 })
+
+$('.mobile--order').click(() => {
+    $('#click').modal({
+        fadeDuration: 200
+    })
+})

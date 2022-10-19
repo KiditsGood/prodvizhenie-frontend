@@ -2673,6 +2673,78 @@ li.disabled *{
     position: unset;
     margin-left: -30px;
 }
+.lk{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.lk .product__tabs-item{
+    width: 100%;
+}
+.my{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.my__top{
+    display: flex;
+    align-items: center;
+    border: 2px solid rgba(236, 239, 241, 1);
+    border-radius: 14px;
+    padding: 20px 0;
+}
+.my__top-item{
+    font-weight: 500;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+}
+.my__wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 2px solid rgba(236, 239, 241, 1);
+    border-radius: 14px;
+}
+.my__wrap-item{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    transition: 0.2s;
+}
+.my__wrap-item:hover{
+    background: #F1F8E9;
+    cursor: pointer;
+}
+.my__wrap-item--text{
+    font-size: 17px;
+    width: 100%;
+    text-align: center;
+}
+.my__wrap-item--button{
+    width: 100%;
+    font-size: 17px;
+    line-height: 19px;
+    color: #FB8C00;
+    font-weight: 500;
+    position: relative;
+}
+.my__wrap-item--button:after{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    background: #FB8C00;
+    height: 2px;
+    left: 50%;
+    right: 50%;
+    transition: 0.2s;
+}
+.my__wrap-item--button:hover:after{
+    left: 25%;
+    right: 25%;
+}
 
 @media screen and (min-width: 1000px) and (max-width: 1480px) {
     .header--wrap, .main, .products, .about, .pluses, .get, .footer__wrap, .product, .previous, .same, .with, .popular, .cart, .order, .catalog, .error{

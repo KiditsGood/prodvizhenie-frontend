@@ -7,5 +7,6 @@
     <orderEntry type="library" name="jquery-3.6.1" level="application" />
     <orderEntry type="library" name="jquery-3.6.1" level="application" />
     <orderEntry type="library" name="jquery.maskedinput" level="application" />
+    <orderEntry type="library" name="jquery.maskedinput" level="application" />
   </component>
 </module>
