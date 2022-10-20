@@ -2745,6 +2745,55 @@ li.disabled *{
     left: 25%;
     right: 25%;
 }
+.data{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.data__credit{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.data__credit-item{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.data__credit-item--name{
+    font-weight: 600;
+}
+.data__main-form{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+.data__main-form--input{
+    font-size: 16px;
+    line-height: 21px;
+    border: 2px solid #ECEFF1;
+    border-radius: 12px;
+    padding: 21px 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.data__main-form--button{
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    border: 1px solid #FB8C00;
+    background: #FB8C00;
+    border-radius: 12px;
+    width: 50%;
+}
+.data__main-form--button:hover{
+    background: white;
+    color: #FB8C00;
+}
 
 @media screen and (min-width: 1000px) and (max-width: 1480px) {
     .header--wrap, .main, .products, .about, .pluses, .get, .footer__wrap, .product, .previous, .same, .with, .popular, .cart, .order, .catalog, .error{
