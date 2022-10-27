@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/swiper.css">
   <link rel="stylesheet" href="css/jquery-modal.css">
   <link rel="icon" href="img/favicon.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="../../Users/webdev/AppData/Local/Temp/Rar$DRa16168.45923/styles.css">
 </head>
 <body>
 <div class="modals">
@@ -348,10 +349,10 @@
   </section>
   <section class="lk">
     <div class="product__tabs">
-      <button type="button" class="product__tabs-item active">Список заказов</button>
-      <button type="button" class="product__tabs-item">Документы</button>
-      <button type="button" class="product__tabs-item">Личные данные</button>
-      <button type="button" class="product__tabs-item">Смена пароля</button>
+      <button data-attr="history" type="button" class="product__tabs-item active">Список заказов</button>
+      <button data-attr="documents" type="button" class="product__tabs-item">Документы</button>
+      <button data-attr="data" type="button" class="product__tabs-item">Личные данные</button>
+      <button data-attr="password" type="button" class="product__tabs-item">Смена пароля</button>
     </div>
     <div class="my">
       <div class="my__top">
@@ -365,13 +366,174 @@
       </div>
       <div class="my__wrap">
         <div class="my__wrap-item">
-          <p class="my__wrap-item--text">1</p>
-          <p class="my__wrap-item--text">19.10.22 - 12:39:01</p>
-          <p class="my__wrap-item--text">Отменен</p>
-          <p class="my__wrap-item--text">Самовывоз</p>
-          <p class="my__wrap-item--text">ул. Киквидзе, 85Б</p>
-          <p class="my__wrap-item--text">54 748,21 Р</p>
-          <button class="my__wrap-item--button">Повторить</button>
+          <div class="my__wrap-item--field">
+            <p class="my__wrap-item--text">1</p>
+            <p class="my__wrap-item--text">19.10.22 - 12:39:01</p>
+            <p class="my__wrap-item--text">Отменен</p>
+            <p class="my__wrap-item--text">Самовывоз</p>
+            <p class="my__wrap-item--text">ул. Киквидзе, 85Б</p>
+            <p class="my__wrap-item--text">54 748,21 Р</p>
+            <button class="my__wrap-item--button">Повторить</button>
+          </div>
+          <div class="my__wrap-hidden">
+            <div class="my__org">
+              <p class="my__org-name">Организация:</p>
+              <p class="my__org-value">ООО "Продвижение"</p>
+            </div>
+            <div class="my__wrap-hidden--item">
+              <div class="my__product">
+                <div class="my__product-item">
+                  <a href="" class="my__product-item--name">Золотой степ арахис, карамель, 50г*25</a>
+                  <div class="my__product-chars">
+                    <p class="my__product-chars--col">1 шт</p>
+                    <p class="my__product-chars--price">54 506,35 Р</p>
+                  </div>
+                </div>
+              </div>
+              <div class="my__total">
+                <p class="my__total-name">Итого:</p>
+                <p class="my__total-value">54 506,35 Р</p>
+              </div>
+            </div>
+            <div class="my__wrap-hidden--item">
+              <div class="my__product">
+                <div class="my__product-item">
+                  <a href="" class="my__product-item--name">Золотой степ арахис, карамель, 50г*25</a>
+                  <div class="my__product-chars">
+                    <p class="my__product-chars--col">1 шт</p>
+                    <p class="my__product-chars--price">54 506,35 Р</p>
+                  </div>
+                </div>
+              </div>
+              <div class="my__total">
+                <p class="my__total-name">Итого:</p>
+                <p class="my__total-value">54 506,35 Р</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="my__wrap-item">
+          <div class="my__wrap-item--field">
+            <p class="my__wrap-item--text">2</p>
+            <p class="my__wrap-item--text">19.10.22 - 12:39:01</p>
+            <p class="my__wrap-item--text">Отменен</p>
+            <p class="my__wrap-item--text">Самовывоз</p>
+            <p class="my__wrap-item--text">ул. Киквидзе, 85Б</p>
+            <p class="my__wrap-item--text">54 748,21 Р</p>
+            <button class="my__wrap-item--button">Повторить</button>
+          </div>
+          <div class="my__wrap-hidden">
+            <div class="my__org">
+              <p class="my__org-name">Организация:</p>
+              <p class="my__org-value">ООО "Продвижение"</p>
+            </div>
+            <div class="my__wrap-hidden--item">
+              <div class="my__product">
+                <div class="my__product-item">
+                  <a href="" class="my__product-item--name">Золотой степ арахис, карамель, 50г*25</a>
+                  <div class="my__product-chars">
+                    <p class="my__product-chars--col">1 шт</p>
+                    <p class="my__product-chars--price">54 506,35 Р</p>
+                  </div>
+                </div>
+              </div>
+              <div class="my__total">
+                <p class="my__total-name">Итого:</p>
+                <p class="my__total-value">54 506,35 Р</p>
+              </div>
+            </div>
+            <div class="my__wrap-hidden--item">
+              <div class="my__product">
+                <div class="my__product-item">
+                  <a href="" class="my__product-item--name">Золотой степ арахис, карамель, 50г*25</a>
+                  <div class="my__product-chars">
+                    <p class="my__product-chars--col">1 шт</p>
+                    <p class="my__product-chars--price">54 506,35 Р</p>
+                  </div>
+                </div>
+              </div>
+              <div class="my__total">
+                <p class="my__total-name">Итого:</p>
+                <p class="my__total-value">54 506,35 Р</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="my__wrap-item">
+          <div class="my__wrap-item--field">
+            <p class="my__wrap-item--text">3</p>
+            <p class="my__wrap-item--text">19.10.22 - 12:39:01</p>
+            <p class="my__wrap-item--text">Отменен</p>
+            <p class="my__wrap-item--text">Самовывоз</p>
+            <p class="my__wrap-item--text">ул. Киквидзе, 85Б</p>
+            <p class="my__wrap-item--text">54 748,21 Р</p>
+            <button class="my__wrap-item--button">Повторить</button>
+          </div>
+          <div class="my__wrap-hidden">
+            <div class="my__org">
+              <p class="my__org-name">Организация:</p>
+              <p class="my__org-value">ООО "Продвижение"</p>
+            </div>
+            <div class="my__wrap-hidden--item">
+              <div class="my__product">
+                <div class="my__product-item">
+                  <a href="" class="my__product-item--name">Золотой степ арахис, карамель, 50г*25</a>
+                  <div class="my__product-chars">
+                    <p class="my__product-chars--col">1 шт</p>
+                    <p class="my__product-chars--price">54 506,35 Р</p>
+                  </div>
+                </div>
+              </div>
+              <div class="my__total">
+                <p class="my__total-name">Итого:</p>
+                <p class="my__total-value">54 506,35 Р</p>
+              </div>
+            </div>
+            <div class="my__wrap-hidden--item">
+              <div class="my__product">
+                <div class="my__product-item">
+                  <a href="" class="my__product-item--name">Золотой степ арахис, карамель, 50г*25</a>
+                  <div class="my__product-chars">
+                    <p class="my__product-chars--col">1 шт</p>
+                    <p class="my__product-chars--price">54 506,35 Р</p>
+                  </div>
+                </div>
+              </div>
+              <div class="my__total">
+                <p class="my__total-name">Итого:</p>
+                <p class="my__total-value">54 506,35 Р</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="documents">
+      <form action="" class="documents__text">
+        <p class="documents__text-name">Запросить документ</p>
+        <textarea name="" class="documents__text-area" placeholder="Введите название документа"></textarea>
+        <button type="submit" class="documents__text-button">Отправить</button>
+      </form>
+      <div class="documents__files">
+        <div class="product__files-field">
+          <p class="documents__date">19.10.22</p>
+          <a href="" class="product__files-item">Filedocumentation.doc</a>
+        </div>
+        <div class="product__files-field">
+          <p class="documents__date">19.10.22</p>
+          <a href="" class="product__files-item">SL106284_isoforms.fpkm_tracking</a>
+        </div>
+        <div class="product__files-field">
+          <p class="documents__date">19.10.22</p>
+          <a href="" class="product__files-item">settlement.from.client.5126.in.case.45.docx</a>
+        </div>
+        <div class="product__files-field">
+          <p class="documents__date">19.10.22</p>
+          <a href="" class="product__files-item">README.rm</a>
+        </div>
+        <div class="product__files-field">
+          <p class="documents__date">19.10.22</p>
+          <a href="" class="product__files-item">Business confidentiality agreement</a>
         </div>
       </div>
     </div>
@@ -400,7 +562,410 @@
           <input type="tel" class="data__main-form--input" value="+7(999)999-99-99" disabled>
           <button type="button" class="data__main-form--button">Изменить данные</button>
         </form>
+        <div class="data__main-org">
+          <div class="data__main-org--item">
+            <div class="data__main-visible">
+              <div class="main__org-item">
+                <p class="main__org-name">Организация:</p>
+                <p class="main__org-value">ООО “Красовщик”</p>
+              </div>
+              <div class="main__org-item">
+                <p class="main__org-name">Номер телефона:</p>
+                <p class="main__org-value">+7 999 999 99 99</p>
+              </div>
+            </div>
+            <form class="data__main-hidden">
+              <div class="data__main-hidden--field">
+                <div class="new__org" style="display: flex;">
+                  <div class="order__item-inputs--item small-medium">
+                    <p class="order__name">Телефон</p>
+                    <input type="tel" class="order__input" value="+7 999 999 99 99" disabled>
+                  </div>
+                  <div class="order__item-inputs--item medium">
+                    <p class="order__name">Город</p>
+                    <input type="text" class="order__input" value="Тамбов" disabled>
+                  </div>
+                  <div class="order__item-inputs--item medium street">
+                    <p class="order__name">Улица</p>
+                    <input type="text" class="order__input" value="Киквидзе" disabled>
+                  </div>
+                  <div class="order__item-inputs--item small index">
+                    <p class="order__name">Индекс</p>
+                    <input type="text" class="order__input" value="392014" disabled>
+                  </div>
+                  <div class="order__item-inputs--item small-medium half">
+                    <p class="order__name">Дом</p>
+                    <input type="text" class="order__input" value="85Б" disabled>
+                  </div>
+                  <div class="order__item-inputs--item small half">
+                    <p class="order__name">Строение</p>
+                    <input type="text" class="order__input" disabled>
+                  </div>
+                  <div class="order__item-inputs--item medium half">
+                    <p class="order__name">Корпус</p>
+                    <input type="text" class="order__input" disabled>
+                  </div>
+                  <div class="order__item-inputs--item medium half">
+                    <p class="order__name">Квартира</p>
+                    <input type="text" class="order__input" disabled>
+                  </div>
+                  <div class="order__item-inputs--item small" disabled="">
+                    <p class="order__name">Правовая форма</p>
+                    <div class="new__select">
+                      <p class="new__select-item">ООО</p>
+                      <i class="order__select-icon icon-right"></i>
+                    </div>
+                    <div class="new__select-hidden">
+                      <input class="hidden__input" type="hidden">
+                      <p class="new__select-hidden--item" data-value="ooo">ООО</p>
+                      <p class="new__select-hidden--item" data-value="ip">ИП</p>
+                    </div>
+                  </div>
+                  <div class="order__item-inputs--item high">
+                    <p class="order__name">Наименование</p>
+                    <input type="text" class="order__input" placeholder="Красовщик" disabled>
+                  </div>
+                  <div class="order__item-inputs--item small-medium half">
+                    <p class="order__name">ИНН</p>
+                    <input type="text" class="order__input" placeholder="111111111111" disabled>
+                  </div>
+                  <div class="order__item-inputs--item small-medium half">
+                    <p class="order__name">КПП</p>
+                    <input type="text" class="order__input" disabled>
+                  </div>
+                  <div class="order__item-inputs--item small-medium half" disabled="">
+                    <p class="order__name">Банк</p>
+                    <div class="new__select">
+                      <p class="new__select-item">Сбербанк</p>
+                      <i class="order__select-icon icon-right"></i>
+                    </div>
+                    <div class="new__select-hidden">
+                      <input class="hidden__input" type="hidden">
+                      <p class="new__select-hidden--item" data-value="sberbank">Сбербанк</p>
+                      <p class="new__select-hidden--item" data-value="tinkoff">Тинькофф</p>
+                      <p class="new__select-hidden--item" data-value="alpha">Альфа банк</p>
+                    </div>
+                  </div>
+                  <div class="order__item-inputs--item small half">
+                    <p class="order__name">БИК</p>
+                    <input type="text" class="order__input" disabled>
+                  </div>
+                  <div class="order__item-inputs--item medium">
+                    <p class="order__name">р/с</p>
+                    <input type="text" class="order__input" disabled>
+                  </div>
+                  <div class="order__item-inputs--item medium">
+                    <p class="order__name">к/с</p>
+                    <input type="text" class="order__input" disabled>
+                  </div>
+                  <div class="order__item-inputs--item high">
+                    <p class="order__name">Директор</p>
+                    <input type="text" class="order__input" disabled>
+                  </div>
+                  <div class="order__item-inputs--item high">
+                    <p class="order__name">Бухгалтер</p>
+                    <input type="text" class="order__input" disabled>
+                  </div>
+                  <input class="filter__check-box--check" type="checkbox" id="nds" name="nds" disabled>
+                  <label for="nds" class="filter__check-box--label">
+                    с НДС
+                  </label>
+                </div>
+              </div>
+              <div class="hidden__address">
+                <div class="hidden__address-item">
+                  <input class="hidden__address-item--text" value="Адрес 1" disabled>
+                  <div>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="hidden__address-item">
+                  <input class="hidden__address-item--text" value="Адрес 2" disabled>
+                  <div>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="hidden__address-item">
+                  <input class="hidden__address-item--text" value="Адрес 3" disabled>
+                  <div>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="hidden__address-item">
+                  <input class="hidden__address-item--text" value="Адрес 1" disabled>
+                  <div>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="hidden__address-item">
+                  <input class="hidden__address-item--text" value="Адрес 2" disabled>
+                  <div>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="hidden__address-item">
+                  <input class="hidden__address-item--text" value="Адрес 3" disabled>
+                  <div>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="hidden__buttons">
+                <button type="button" class="hidden__buttons-item white">Добавить адрес</button>
+                <button type="button" class="hidden__buttons-item green">Редактировать</button>
+                <button type="button" class="hidden__buttons-item orange">Удалить</button>
+              </div>
+            </form>
+          </div>
+          <div class="data__main-org--item">
+            <div class="data__main-visible">
+              <div class="main__org-item">
+                <p class="main__org-name">Организация:</p>
+                <p class="main__org-value">ООО “Красовщик”</p>
+              </div>
+              <div class="main__org-item">
+                <p class="main__org-name">Номер телефона:</p>
+                <p class="main__org-value">+7 999 999 99 99</p>
+              </div>
+            </div>
+            <form class="data__main-hidden">
+              <div class="data__main-hidden--field">
+                <div class="new__org" style="display: flex;">
+                  <div class="order__item-inputs--item small-medium">
+                    <p class="order__name">Телефон</p>
+                    <input type="tel" class="order__input" required="">
+                  </div>
+                  <div class="order__item-inputs--item medium">
+                    <p class="order__name">Город</p>
+                    <input type="text" class="order__input" required="">
+                  </div>
+                  <div class="order__item-inputs--item medium street">
+                    <p class="order__name">Улица</p>
+                    <input type="text" class="order__input" required="">
+                  </div>
+                  <div class="order__item-inputs--item small index">
+                    <p class="order__name">Индекс</p>
+                    <input type="text" class="order__input" required="">
+                  </div>
+                  <div class="order__item-inputs--item small-medium half">
+                    <p class="order__name">Дом</p>
+                    <input type="text" class="order__input" required="">
+                  </div>
+                  <div class="order__item-inputs--item small half">
+                    <p class="order__name">Строение</p>
+                    <input type="text" class="order__input" required="">
+                  </div>
+                  <div class="order__item-inputs--item medium half">
+                    <p class="order__name">Корпус</p>
+                    <input type="text" class="order__input" required="">
+                  </div>
+                  <div class="order__item-inputs--item medium half">
+                    <p class="order__name">Квартира</p>
+                    <input type="text" class="order__input" required="">
+                  </div>
+                  <div class="order__item-inputs--item small">
+                    <p class="order__name">Правовая форма</p>
+                    <div class="new__select">
+                      <p class="new__select-item">ООО</p>
+                      <i class="order__select-icon icon-right"></i>
+                    </div>
+                    <div class="new__select-hidden">
+                      <input class="hidden__input" type="hidden">
+                      <p class="new__select-hidden--item" data-value="ooo">ООО</p>
+                      <p class="new__select-hidden--item" data-value="ip">ИП</p>
+                    </div>
+                  </div>
+                  <div class="order__item-inputs--item high">
+                    <p class="order__name">Наименование</p>
+                    <input type="text" class="order__input" required="">
+                  </div>
+                  <div class="order__item-inputs--item small-medium half">
+                    <p class="order__name">ИНН</p>
+                    <input type="text" class="order__input" required="">
+                  </div>
+                  <div class="order__item-inputs--item small-medium half">
+                    <p class="order__name">КПП</p>
+                    <input type="text" class="order__input" required="">
+                  </div>
+                  <div class="order__item-inputs--item small-medium half">
+                    <p class="order__name">Банк</p>
+                    <div class="new__select">
+                      <p class="new__select-item">Сбербанк</p>
+                      <i class="order__select-icon icon-right"></i>
+                    </div>
+                    <div class="new__select-hidden">
+                      <input class="hidden__input" type="hidden">
+                      <p class="new__select-hidden--item" data-value="sberbank">Сбербанк</p>
+                      <p class="new__select-hidden--item" data-value="tinkoff">Тинькофф</p>
+                      <p class="new__select-hidden--item" data-value="alpha">Альфа банк</p>
+                    </div>
+                  </div>
+                  <div class="order__item-inputs--item small half">
+                    <p class="order__name">БИК</p>
+                    <input type="text" class="order__input" required="">
+                  </div>
+                  <div class="order__item-inputs--item medium">
+                    <p class="order__name">р/с</p>
+                    <input type="text" class="order__input" required="">
+                  </div>
+                  <div class="order__item-inputs--item medium">
+                    <p class="order__name">к/с</p>
+                    <input type="text" class="order__input" required="">
+                  </div>
+                  <div class="order__item-inputs--item high">
+                    <p class="order__name">Директор</p>
+                    <input type="text" class="order__input" required="">
+                  </div>
+                  <div class="order__item-inputs--item high">
+                    <p class="order__name">Бухгалтер</p>
+                    <input type="text" class="order__input" required="">
+                  </div>
+                  <input class="filter__check-box--check" type="checkbox" id="nds2" name="nds2">
+                  <label for="nds2" class="filter__check-box--label">
+                    с НДС
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <form class="hidden__create">
+            <div class="data__main-hidden--field">
+              <div class="new__org" style="display: flex;">
+                <div class="order__item-inputs--item small-medium">
+                  <p class="order__name">Телефон</p>
+                  <input type="tel" class="order__input" required="" value="+7 999 999 99 99" disabled>
+                </div>
+                <div class="order__item-inputs--item medium">
+                  <p class="order__name">Город</p>
+                  <input type="text" class="order__input" required="" value="Тамбов" disabled>
+                </div>
+                <div class="order__item-inputs--item medium street">
+                  <p class="order__name">Улица</p>
+                  <input type="text" class="order__input" required="" value="Киквидзе" disabled>
+                </div>
+                <div class="order__item-inputs--item small index">
+                  <p class="order__name">Индекс</p>
+                  <input type="text" class="order__input" required="" value="392014" disabled>
+                </div>
+                <div class="order__item-inputs--item small-medium half">
+                  <p class="order__name">Дом</p>
+                  <input type="text" class="order__input" required="" value="85Б" disabled>
+                </div>
+                <div class="order__item-inputs--item small half">
+                  <p class="order__name">Строение</p>
+                  <input type="text" class="order__input" required="" disabled>
+                </div>
+                <div class="order__item-inputs--item medium half">
+                  <p class="order__name">Корпус</p>
+                  <input type="text" class="order__input" required="" disabled>
+                </div>
+                <div class="order__item-inputs--item medium half">
+                  <p class="order__name">Квартира</p>
+                  <input type="text" class="order__input" required="" disabled>
+                </div>
+                <div class="order__item-inputs--item small" disabled="">
+                  <p class="order__name">Правовая форма</p>
+                  <div class="new__select">
+                    <p class="new__select-item">ООО</p>
+                    <i class="order__select-icon icon-right"></i>
+                  </div>
+                  <div class="new__select-hidden">
+                    <input class="hidden__input" type="hidden">
+                    <p class="new__select-hidden--item" data-value="ooo">ООО</p>
+                    <p class="new__select-hidden--item" data-value="ip">ИП</p>
+                  </div>
+                </div>
+                <div class="order__item-inputs--item high">
+                  <p class="order__name">Наименование</p>
+                  <input type="text" class="order__input" required="" placeholder="Красовщик" disabled>
+                </div>
+                <div class="order__item-inputs--item small-medium half">
+                  <p class="order__name">ИНН</p>
+                  <input type="text" class="order__input" required="" placeholder="111111111111" disabled>
+                </div>
+                <div class="order__item-inputs--item small-medium half">
+                  <p class="order__name">КПП</p>
+                  <input type="text" class="order__input" required="" disabled>
+                </div>
+                <div class="order__item-inputs--item small-medium half" disabled="">
+                  <p class="order__name">Банк</p>
+                  <div class="new__select">
+                    <p class="new__select-item">Сбербанк</p>
+                    <i class="order__select-icon icon-right"></i>
+                  </div>
+                  <div class="new__select-hidden">
+                    <input class="hidden__input" type="hidden">
+                    <p class="new__select-hidden--item" data-value="sberbank">Сбербанк</p>
+                    <p class="new__select-hidden--item" data-value="tinkoff">Тинькофф</p>
+                    <p class="new__select-hidden--item" data-value="alpha">Альфа банк</p>
+                  </div>
+                </div>
+                <div class="order__item-inputs--item small half">
+                  <p class="order__name">БИК</p>
+                  <input type="text" class="order__input" required="" disabled>
+                </div>
+                <div class="order__item-inputs--item medium">
+                  <p class="order__name">р/с</p>
+                  <input type="text" class="order__input" required="" disabled>
+                </div>
+                <div class="order__item-inputs--item medium">
+                  <p class="order__name">к/с</p>
+                  <input type="text" class="order__input" required="" disabled>
+                </div>
+                <div class="order__item-inputs--item high">
+                  <p class="order__name">Директор</p>
+                  <input type="text" class="order__input" required="" disabled>
+                </div>
+                <div class="order__item-inputs--item high">
+                  <p class="order__name">Бухгалтер</p>
+                  <input type="text" class="order__input" required="" disabled>
+                </div>
+                <input class="filter__check-box--check" type="checkbox" id="nds4" name="nds" disabled>
+                <label for="nds4" class="filter__check-box--label">
+                  с НДС
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="hidden__create-button">Добавить</button>
+          </form>
+          <button class="data__main-org--add">Добавить организацию</button>
+        </div>
       </div>
+    </div>
+    <form action="" class="password">
+      <div>
+        <input type="password" class="password__input" required placeholder="Введите новый пароль">
+        <i class="icon-eye"></i>
+      </div>
+      <div>
+        <input type="password" class="password__input" required placeholder="Повторите пароль">
+        <i class="icon-eye"></i>
+      </div>
+      <button type="submit" class="password__button">Сохранить</button>
+    </form>
+  </section>
+  <section class="menu">
+    <div class="menu__item">
+      <i class="menu__item-icon icon-catalog"></i>
+      <p class="menu__item-text">Каталог</p>
+    </div>
+    <div class="menu__item">
+      <i class="menu__item-icon icon-percent-svgrepo-com"></i>
+      <p class="menu__item-text">Акции</p>
+    </div>
+    <div class="menu__item">
+      <i class="menu__item-icon icon-user-circle"></i>
+      <p class="menu__item-text">Профиль</p>
+    </div>
+    <div class="menu__item">
+      <i class="menu__item-icon icon-group"></i>
+      <p class="menu__item-text">Корзина</p>
     </div>
   </section>
 </main>
@@ -463,7 +1028,6 @@
 <script src="js/modals.js"></script>
 <script src="js/bigCard.js"></script>
 <script src="js/phoneMask.js"></script>
-<script src="js/heightChecker.js"></script>
 <script src="js/lkEvents.js"></script>
 </body>
 </html>
