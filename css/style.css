@@ -565,7 +565,7 @@ input::-webkit-inner-spin-button {
 }
 .about{
     max-width: 1440px;
-    margin: 100px auto;
+    margin: 110px auto 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -3188,6 +3188,48 @@ body.active .footer{
     box-sizing: border-box;
     border-radius: 14px;
 }
+.news{
+    margin: 184px auto 100px;
+}
+.news .products__item:hover{
+    border-bottom: 1px solid #FB8C00;
+    border-radius: 16px;
+    border-color: rgba(251, 140, 0, 1);
+}
+.desc__name{
+    width: unset;
+}
+.up{
+    position: fixed;
+    right: 5%;
+    bottom: 15%;
+    z-index: 2;
+}
+.up__outer{
+    background: #FFFFFF;
+    border: 2px solid #FB8C00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    z-index: 2;
+    transition: 0.2s;
+}
+.up__outer:hover{
+    background-color: #FB8C00;
+    color: white;
+    cursor: pointer;
+}
+.up__outer:hover i{
+    color: white;
+}
+.up__outer i{
+    font-size: 30px;
+    height: 30px;
+    transform: rotate(-90deg);
+}
 
 @media screen and (min-width: 1000px) and (max-width: 1480px) {
     .header--wrap, .main, .products, .about, .pluses, .get, .footer__wrap, .product, .previous, .same, .with, .popular, .cart, .order, .catalog, .error, .lk{
@@ -4343,5 +4385,14 @@ body.active .footer{
     }
     .hidden__buttons-item{
         width: 100%;
+    }
+    .news{
+        margin: 50px auto;
+    }
+    .news .products__title{
+        display: block;
+    }
+    .news .products__item-chars{
+        display: flex;
     }
 }
